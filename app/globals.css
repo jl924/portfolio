@@ -106,7 +106,9 @@ body {
 
 .footer {
   display: flex;
-  justify-content: end;
+  position: absolute;
+  bottom: 3%;
+  right: 0%;
   margin-right: 4%;
   color: #4a4d4a;
   cursor: pointer;

@@ -2,8 +2,7 @@ const mongoose = require("mongoose")
 
 console.log(process.env.NEXT_PUBLIC_DB_HOST)
 
-const uri =
-  "mongodb+srv://jl924:1234@portforlio.cvkegpy.mongodb.net/?retryWrites=true&w=majority"
+const uri = "blank"
 
 mongoose.connect(uri, {
   useNewUrlParser: true,

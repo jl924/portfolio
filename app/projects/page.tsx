@@ -1,5 +1,5 @@
-"use client"
-
-export default function Home() {
-  return <main className="home">hello world</main>
+const Projects = () => {
+  return <div>hello world</div>
 }
+
+export default Projects
