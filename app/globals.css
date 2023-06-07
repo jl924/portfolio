@@ -108,7 +108,7 @@ body {
   display: flex;
   position: absolute;
   bottom: 3%;
-  right: 0%;
+  right: 1%;
   margin-right: 4%;
   color: #4a4d4a;
   cursor: pointer;
@@ -166,4 +166,17 @@ body {
 
 .secondPara {
   margin-bottom: 10px;
+}
+
+.projectSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

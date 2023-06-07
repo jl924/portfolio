@@ -1,11 +1,21 @@
+import Link from "next/link"
+
 const Header = () => {
   return (
     <div className="header">
-      <div className="title">Jae Hoon Lee</div>
+      <div className="title">
+        <Link href="/">Jae Hoon Lee</Link>
+      </div>
       <div className="buttonContainer">
-        <button className="button">1</button>
-        <button className="button">2</button>
-        <button className="button">3</button>
+        <button className="button">
+          <Link href="/projects">Projects</Link>
+        </button>
+        <button className="button">
+          <Link href="/uxuilead">UX/UI Lead</Link>
+        </button>
+        <button className="button">
+          <Link href="/games">Soon...</Link>
+        </button>
       </div>
     </div>
   )

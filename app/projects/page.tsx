@@ -1,5 +1,3 @@
-const Projects = () => {
+export default function Projects() {
   return <div>hello world</div>
 }
-
-export default Projects
