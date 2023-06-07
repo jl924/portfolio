@@ -121,7 +121,11 @@ body {
   color: black;
 }
 .button {
-  margin: 0 5px;
+  margin: 0 20px;
+}
+
+.button:hover {
+  color: darkgray;
 }
 
 .main {
