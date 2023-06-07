@@ -2,26 +2,166 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    #4a4d4a 3%,
+    #4a4d4a 38%,
+    #4a4d4a 68%,
+    #4a4d4a 98%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  min-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #4a4d4a;
+  color: white;
+  outline: solid;
+  outline-style: groove;
+}
+
+.title {
+  font-weight: bold;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-size: x-large;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  margin-right: 4%;
+  color: #4a4d4a;
+  cursor: pointer;
+}
+
+.githubIcon:hover {
+  color: black;
+}
+.linkedIcon:hover {
+  color: black;
+}
+.button {
+  margin: 0 5px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.photoSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePhoto {
+  border-radius: 50%;
+}
+
+.aboutMeSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 10%;
+  color: white;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.aboutMe {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.firstPara {
+  margin-bottom: 10px;
+}
+
+.secondPara {
+  margin-bottom: 10px;
 }
