@@ -1,6 +1,9 @@
 "use client"
 import { VscGithub } from "react-icons/vsc"
 import { AiOutlineLinkedin } from "react-icons/ai"
+import { AiOutlineMail } from "react-icons/ai"
+import { LuCopyCheck } from "react-icons/lu"
+import { useState } from "react"
 
 const Footer = () => {
   const handleClickG = () => {
@@ -8,6 +11,11 @@ const Footer = () => {
   }
   const handleClickL = () => {
     window.open("https://www.linkedin.com/in/jae-hoon-lee/", "_blank")
+  }
+  const [copy, setCopy] = useState(false)
+  const handleClickE = () => {
+    navigator.clipboard.writeText("jaehlee.110994@gmail.com")
+    setCopy(true)
   }
 
   return (
@@ -22,6 +30,15 @@ const Footer = () => {
         className="linkedIcon"
         onClick={handleClickL}
       />
+      {copy ? (
+        <LuCopyCheck size={50} className="copied" onClick={handleClickE} />
+      ) : (
+        <AiOutlineMail
+          size={50}
+          className="linkedIcon"
+          onClick={handleClickE}
+        />
+      )}
     </div>
   )
 }
