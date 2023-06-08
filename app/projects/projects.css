@@ -11,8 +11,8 @@
 
 .box {
   background-color: white;
-  width: 70%;
-  height: 70%;
+  width: 1200px;
+  height: 450px;
   display: flex;
   border-radius: 10px;
 }

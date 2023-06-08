@@ -5,6 +5,7 @@ const Projects = () => {
   return (
     <div className="pageContainer">
       <div className="box">
+        <button>X</button>
         <div className="imageContainer">
           <img
             src="path_to_your_image.jpg"
@@ -18,6 +19,7 @@ const Projects = () => {
             adipiscing elit. Aenean euismod bibendum laoreet.
           </p>
         </div>
+        <button>X</button>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import photo from "./photo.jpg"
 
-const front = [
+const front: string[] = [
   "JavaScript",
   "React",
   "TypeScript",
@@ -12,7 +12,7 @@ const front = [
   "Redux",
 ]
 
-const back = [
+const back: string[] = [
   "Node.js",
   "Express",
   "MongoDB",
@@ -21,7 +21,14 @@ const back = [
   "RESTful API",
 ]
 
-const others = ["Jest", "Mocha", "Chai", "Artillery", " AWS:EC2", "RDS"]
+const others: string[] = [
+  "Jest",
+  "Mocha",
+  "Chai",
+  "Artillery",
+  "AWS:EC2",
+  "RDS",
+]
 
 export default function Home() {
   return (
