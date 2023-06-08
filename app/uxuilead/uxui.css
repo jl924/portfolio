@@ -16,6 +16,47 @@
     margin-bottom: 17px;
     margin-left: 5px;
     border-radius: 5px;
+    min-width: 100px;
+    font-size: small;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .plan:hover {
+    background-color: darkgray;
+  }
+
+  .ppt {
+    height: 269px;
+    width: 500px;
+  }
+
+  .ghIcon {
+    color: gray;
+  }
+  .ghIcon:hover {
+    color: darkgray;
+  }
+
+  .werewolfGame {
+    height: 300px;
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .plan {
+    background-color: gray;
+    margin-bottom: 17px;
+    margin-left: 5px;
+    border-radius: 5px;
     min-width: 150px;
     text-align: center;
     cursor: pointer;
@@ -24,25 +65,61 @@
   .plan:hover {
     background-color: darkgray;
   }
+
+  .ppt {
+    height: 469px;
+    width: 1000px;
+  }
+
+  .ghIcon {
+    color: gray;
+  }
+  .ghIcon:hover {
+    color: darkgray;
+  }
+
+  .werewolfGame {
+    height: 400px;
+    width: 660px;
+  }
 }
 
-.pageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-}
+@media only screen and (min-width: 1800px) {
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
 
-.plan {
-  background-color: gray;
-  margin-bottom: 17px;
-  margin-left: 5px;
-  border-radius: 5px;
-  min-width: 150px;
-  text-align: center;
-  cursor: pointer;
-}
+  .plan {
+    background-color: gray;
+    margin-bottom: 17px;
+    margin-left: 5px;
+    border-radius: 5px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+  }
 
-.plan:hover {
-  background-color: darkgray;
+  .plan:hover {
+    background-color: darkgray;
+  }
+
+  .ppt {
+    height: 469px;
+    width: 1000px;
+  }
+
+  .ghIcon {
+    color: gray;
+  }
+  .ghIcon:hover {
+    color: darkgray;
+  }
+
+  .werewolfGame {
+    height: 600px;
+    width: 1000px;
+  }
 }

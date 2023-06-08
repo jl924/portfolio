@@ -12,7 +12,11 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <VscGithub size={50} className="githubIcon" onClick={handleClickG} />
+      <VscGithub
+        size={50}
+        className="githubIcon items-center"
+        onClick={handleClickG}
+      />
       <AiOutlineLinkedin
         size={50}
         className="linkedIcon"
