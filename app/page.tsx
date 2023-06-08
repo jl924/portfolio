@@ -1,6 +1,28 @@
 import Image from "next/image"
 import photo from "./photo.jpg"
 
+const front = [
+  "JavaScript",
+  "React",
+  "TypeScript",
+  "Next.JS",
+  "HTML5",
+  "CSS3",
+  "Sass",
+  "Redux",
+]
+
+const back = [
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "MySQL",
+  "PostgreSQL",
+  "RESTful API",
+]
+
+const others = ["Jest", "Mocha", "Chai", "Artillery", " AWS:EC2", "RDS"]
+
 export default function Home() {
   return (
     <main className="home">
@@ -10,7 +32,7 @@ export default function Home() {
             src={photo}
             width={400}
             height={400}
-            alt="Picture of the author"
+            alt="Jaes photo"
             className="profilePhoto"
           />
         </div>
@@ -44,6 +66,27 @@ export default function Home() {
             requirements of the task at hand, execute my responsibilities, and
             even assist teammates who may need additional support.
           </p>
+        </div>
+        <div className="techStackSection">
+          <h1 className="aboutMe">Tech Stack</h1>
+          <h4>Front End:</h4>
+          <ul className="techGrid">
+            {front.map((stack) => {
+              return <li className="techStack">{stack}</li>
+            })}
+          </ul>
+          <h4>Back End:</h4>
+          <ul className="techGrid">
+            {back.map((stack) => {
+              return <li className="techStack">{stack}</li>
+            })}
+          </ul>
+          <h4>Testing/Deployment:</h4>
+          <ul className="techGrid">
+            {others.map((stack) => {
+              return <li className="techStack">{stack}</li>
+            })}
+          </ul>
         </div>
       </div>
     </main>
