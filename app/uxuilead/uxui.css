@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width: 1000px) {
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .plan {
+    background-color: gray;
+    margin-bottom: 17px;
+    margin-left: 5px;
+    border-radius: 5px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .plan:hover {
+    background-color: darkgray;
+  }
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.plan {
+  background-color: gray;
+  margin-bottom: 17px;
+  margin-left: 5px;
+  border-radius: 5px;
+  min-width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.plan:hover {
+  background-color: darkgray;
+}

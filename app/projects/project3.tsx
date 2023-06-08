@@ -2,7 +2,7 @@
 
 import React from "react"
 import "./projects.css"
-import pro1 from "./project1.gif"
+import pro3 from "./project3.gif"
 import Image from "next/image"
 import { VscGithub } from "react-icons/vsc"
 
@@ -18,7 +18,7 @@ const Project3 = () => {
     <div className="box">
       <div className="imageContainer">
         <Image
-          src={pro1}
+          src={pro3}
           width={500}
           height={500}
           alt="project1"
