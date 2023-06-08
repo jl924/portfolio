@@ -1,26 +1,31 @@
-import React from "react"
+"use client"
+
+import { useState } from "react"
 import "./projects.css"
+import Project1 from "./project1"
+import Project2 from "./project2"
+import Project3 from "./project3"
 
 const Projects = () => {
+  const [pro, setPro] = useState(1)
+
+  if (pro > 3) {
+    setPro(1)
+  }
+  if (pro < 1) {
+    setPro(3)
+  }
   return (
     <div className="pageContainer">
-      <div className="box">
-        <button>X</button>
-        <div className="imageContainer">
-          <img
-            src="path_to_your_image.jpg"
-            alt="Your Image"
-            className="image"
-          />
-        </div>
-        <div className="descriptionContainer">
-          <p className="description">
-            Your description goes here. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Aenean euismod bibendum laoreet.
-          </p>
-        </div>
-        <button>X</button>
-      </div>
+      <button className="buttonLeft" onClick={() => setPro(pro - 1)}>
+        {"<"}
+      </button>
+      {pro === 1 ? <Project1 /> : null}
+      {pro === 2 ? <Project2 /> : null}
+      {pro === 3 ? <Project3 /> : null}
+      <button className="buttonRight" onClick={() => setPro(pro + 1)}>
+        {">"}
+      </button>
     </div>
   )
 }
