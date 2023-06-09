@@ -106,7 +106,7 @@
 
   .footer {
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 3%;
     right: 1%;
     margin-right: 4%;
@@ -138,6 +138,7 @@
 
   .profilePhoto {
     border-radius: 50%;
+    margin-top: 100px;
     width: 400px;
     height: 400px;
   }
@@ -284,6 +285,8 @@
     color: white;
     outline: solid;
     outline-style: groove;
+    font-size: small;
+    z-index: 99;
   }
 
   .title {
@@ -301,11 +304,12 @@
 
   .footer {
     display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 3%;
+    top: 25%;
     right: 1%;
     margin-right: 4%;
-    color: #4a4d4a;
+    color: black;
     cursor: pointer;
   }
 
@@ -333,8 +337,8 @@
 
   .profilePhoto {
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .aboutMeSection {
@@ -492,6 +496,7 @@
 
   .buttonContainer {
     display: flex;
+    color: transparent;
     margin-right: 2%;
     margin-top: 2%;
   }
@@ -529,7 +534,6 @@
   }
 
   .photoSide {
-    margin-top: 40%;
     margin-right: 20%;
   }
 
