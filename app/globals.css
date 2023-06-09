@@ -78,6 +78,55 @@
       transform: translateX(1);
     }
   }
+  .header {
+    display: flex;
+    position: fixed;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4a4d4a;
+    color: white;
+    outline: solid;
+    outline-style: groove;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: x-large;
+  }
+
+  .buttonContainer {
+    display: flex;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+
+  .footer {
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+    margin-right: 4%;
+    color: #4a4d4a;
+    cursor: pointer;
+  }
+
+  .githubIcon:hover {
+    color: black;
+  }
+  .linkedIcon:hover {
+    color: black;
+  }
+  .button {
+    margin: 0 20px;
+  }
+
+  .button:hover {
+    color: darkgray;
+  }
 
   .main {
     display: flex;
@@ -85,10 +134,6 @@
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-  }
-
-  .photoSide {
-    margin-top: 70%;
   }
 
   .profilePhoto {
@@ -228,6 +273,55 @@
       transform: translateX(1);
     }
   }
+  .header {
+    display: flex;
+    position: fixed;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4a4d4a;
+    color: white;
+    outline: solid;
+    outline-style: groove;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: x-large;
+  }
+
+  .buttonContainer {
+    display: flex;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+
+  .footer {
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+    margin-right: 4%;
+    color: #4a4d4a;
+    cursor: pointer;
+  }
+
+  .githubIcon:hover {
+    color: black;
+  }
+  .linkedIcon:hover {
+    color: black;
+  }
+  .button {
+    margin: 0 20px;
+  }
+
+  .button:hover {
+    color: darkgray;
+  }
 
   .main {
     display: flex;
@@ -235,10 +329,6 @@
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-  }
-
-  .photoSide {
-    margin-top: 150%;
   }
 
   .profilePhoto {
@@ -302,203 +392,406 @@
 }
 
 /* =============================================================================== */
-
-body {
-  margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow: auto;
-  background: linear-gradient(
-    315deg,
-    #4a4d4a 3%,
-    #4a4d4a 38%,
-    #4a4d4a 68%,
-    #4a4d4a 98%
-  );
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-.wave {
-  background: rgb(255 255 255 / 25%);
-  border-radius: 1000% 1000% 0 0;
-  position: fixed;
-  width: 200%;
-  height: 12em;
-  animation: wave 10s -3s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.8;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: wave 20s -1s reverse infinite;
-  opacity: 0.9;
-}
-
-@keyframes wave {
-  2% {
-    transform: translateX(1);
+@media only screen and (max-width: 400px) {
+  body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(
+      315deg,
+      #4a4d4a 3%,
+      #4a4d4a 38%,
+      #4a4d4a 68%,
+      #4a4d4a 98%
+    );
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
   }
 
-  25% {
-    transform: translateX(-25%);
+  @keyframes gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
   }
 
-  50% {
-    transform: translateX(-50%);
+  .wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
   }
 
-  75% {
-    transform: translateX(-25%);
+  .wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
   }
 
-  100% {
-    transform: translateX(1);
+  .wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+  }
+
+  @keyframes wave {
+    2% {
+      transform: translateX(1);
+    }
+
+    25% {
+      transform: translateX(-25%);
+    }
+
+    50% {
+      transform: translateX(-50%);
+    }
+
+    75% {
+      transform: translateX(-25%);
+    }
+
+    100% {
+      transform: translateX(1);
+    }
+  }
+
+  .header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4a4d4a;
+    color: white;
+    outline: solid;
+    outline-style: groove;
+    font-size: small;
+    z-index: 99;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: small;
+  }
+
+  .buttonContainer {
+    display: flex;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    top: 25%;
+    right: 1%;
+    margin-right: 4%;
+    color: black;
+    cursor: pointer;
+  }
+
+  .githubIcon:hover {
+    color: black;
+  }
+  .linkedIcon:hover {
+    color: black;
+  }
+  .button {
+    margin: 0 5px;
+  }
+
+  .button:hover {
+    color: darkgray;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  .photoSide {
+    margin-top: 40%;
+    margin-right: 20%;
+  }
+
+  .profilePhoto {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .aboutMeSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
+    max-width: 500px;
+    font-size: 13px;
+  }
+
+  .aboutMe {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .firstPara {
+    margin-bottom: 10px;
+  }
+
+  .secondPara {
+    margin-bottom: 10px;
+  }
+
+  .techStackSection {
+    margin-right: 5%;
+    color: White;
+  }
+
+  .techStack {
+    outline: solid;
+    outline-color: gray;
+    background-color: gray;
+    border-radius: 3px;
+    text-align: center;
+    max-width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .techStack:hover {
+    background: darkgray;
+  }
+
+  .techGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.header {
-  display: flex;
-  position: fixed;
-  min-width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #4a4d4a;
-  color: white;
-  outline: solid;
-  outline-style: groove;
-}
+/* =============================================================================== */
+@media only screen and (min-width: 1300px) {
+  body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(
+      315deg,
+      #4a4d4a 3%,
+      #4a4d4a 38%,
+      #4a4d4a 68%,
+      #4a4d4a 98%
+    );
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+  }
 
-.title {
-  font-weight: bold;
-  margin-left: 2%;
-  margin-top: 2%;
-  font-size: x-large;
-}
+  @keyframes gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
 
-.buttonContainer {
-  display: flex;
-  margin-right: 2%;
-  margin-top: 2%;
-}
+  .wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 
-.footer {
-  display: flex;
-  position: absolute;
-  bottom: 3%;
-  right: 1%;
-  margin-right: 4%;
-  color: #4a4d4a;
-  cursor: pointer;
-}
+  .wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+  }
 
-.githubIcon:hover {
-  color: black;
-}
-.linkedIcon:hover {
-  color: black;
-}
-.button {
-  margin: 0 20px;
-}
+  .wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+  }
 
-.button:hover {
-  color: darkgray;
-}
+  @keyframes wave {
+    2% {
+      transform: translateX(1);
+    }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-}
+    25% {
+      transform: translateX(-25%);
+    }
 
-.photoSide {
-  margin-left: 5%;
-}
+    50% {
+      transform: translateX(-50%);
+    }
 
-.profilePhoto {
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-}
+    75% {
+      transform: translateX(-25%);
+    }
 
-.aboutMeSection {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-right: 5%;
-  margin-left: 5%;
-  color: white;
-  max-width: 500px;
-  font-size: 13px;
-}
+    100% {
+      transform: translateX(1);
+    }
+  }
 
-.aboutMe {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+  .header {
+    display: flex;
+    position: fixed;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4a4d4a;
+    color: white;
+    outline: solid;
+    outline-style: groove;
+  }
 
-.firstPara {
-  margin-bottom: 10px;
-}
+  .title {
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: x-large;
+  }
 
-.secondPara {
-  margin-bottom: 10px;
-}
+  .buttonContainer {
+    display: flex;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
 
-.techStackSection {
-  margin-right: 5%;
-  color: White;
-}
+  .footer {
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+    margin-right: 4%;
+    color: #4a4d4a;
+    cursor: pointer;
+  }
 
-.techStack {
-  outline: solid;
-  outline-color: gray;
-  background-color: gray;
-  border-radius: 3px;
-  text-align: center;
-  max-width: 150px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 5px;
-}
+  .githubIcon:hover {
+    color: black;
+  }
+  .linkedIcon:hover {
+    color: black;
+  }
+  .button {
+    margin: 0 20px;
+  }
 
-.techStack:hover {
-  background: darkgray;
-}
+  .button:hover {
+    color: darkgray;
+  }
 
-.techGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
 
-.copied {
-  cursor: default;
+  .photoSide {
+    margin-left: 5%;
+  }
+
+  .profilePhoto {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+  }
+
+  .aboutMeSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
+    max-width: 500px;
+    font-size: 13px;
+  }
+
+  .aboutMe {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .firstPara {
+    margin-bottom: 10px;
+  }
+
+  .secondPara {
+    margin-bottom: 10px;
+  }
+
+  .techStackSection {
+    margin-right: 5%;
+    color: White;
+  }
+
+  .techStack {
+    outline: solid;
+    outline-color: gray;
+    background-color: gray;
+    border-radius: 3px;
+    text-align: center;
+    max-width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .techStack:hover {
+    background: darkgray;
+  }
+
+  .techGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .copied {
+    cursor: default;
+  }
 }
