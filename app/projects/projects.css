@@ -2,150 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media only screen and (max-width: 1000px) {
-  .pageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-  }
-
-  .box {
-    margin-top: 200px;
-    background-color: white;
-    width: 1200px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-  }
-
-  .imageContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .image {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  .descriptionContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .description {
-    text-align: start;
-    font-size: small;
-    padding: 20px;
-  }
-
-  .githubPro:hover {
-    color: #4a4d4a;
-    cursor: pointer;
-  }
-
-  .buttonLeft {
-    background-color: gray;
-    margin-right: 4px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-  }
-
-  .buttonLeft:hover {
-    background-color: darkgray;
-  }
-
-  .buttonRight {
-    background-color: gray;
-    margin-left: 4px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-  }
-
-  .buttonLeft:right {
-    background-color: darkgray;
-  }
-}
-/* ======================================================================= */
-@media only screen and (min-width: 1000px) {
-  .pageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-  }
-
-  .box {
-    background-color: white;
-    width: 1200px;
-    height: 450px;
-    display: flex;
-    border-radius: 10px;
-  }
-
-  .imageContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .image {
-    width: 800px;
-    height: 800px;
-  }
-
-  .descriptionContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .description {
-    text-align: start;
-    font-size: 14px;
-    padding: 20px;
-  }
-
-  .githubPro:hover {
-    color: #4a4d4a;
-    cursor: pointer;
-  }
-
-  .buttonLeft {
-    background-color: gray;
-    margin-right: 4px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-  }
-
-  .buttonLeft:hover {
-    background-color: darkgray;
-  }
-
-  .buttonRight {
-    background-color: gray;
-    margin-left: 4px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-  }
-
-  .buttonLeft:right {
-    background-color: darkgray;
-  }
-}
-
 @media only screen and (min-width: 1921px) {
   .pageContainer {
     display: flex;
@@ -207,6 +63,373 @@
   .buttonRight {
     background-color: gray;
     margin-left: 4px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:right {
+    background-color: darkgray;
+  }
+}
+
+/* ======================================================================= */
+
+@media only screen and (min-width: 1300px) {
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .box {
+    background-color: white;
+    width: 1200px;
+    height: 450px;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .descriptionContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    text-align: start;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .githubPro:hover {
+    color: #4a4d4a;
+    cursor: pointer;
+  }
+
+  .buttonLeft {
+    background-color: gray;
+    margin-right: 4px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:hover {
+    background-color: darkgray;
+  }
+
+  .buttonRight {
+    background-color: gray;
+    margin-left: 4px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:right {
+    background-color: darkgray;
+  }
+}
+/* ======================================================================= */
+
+@media only screen and (max-width: 1300px) {
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .box {
+    background-color: white;
+    width: 1200px;
+    height: 450px;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .descriptionContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    text-align: start;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .githubPro:hover {
+    color: #4a4d4a;
+    cursor: pointer;
+  }
+
+  .buttonLeft {
+    background-color: gray;
+    margin-right: 4px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:hover {
+    background-color: darkgray;
+  }
+
+  .buttonRight {
+    background-color: gray;
+    margin-left: 4px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:right {
+    background-color: darkgray;
+  }
+}
+
+/* ======================================================================= */
+
+@media only screen and (max-width: 1000px) {
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .box {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project1 {
+    width: 400px;
+    height: 300px;
+  }
+
+  .descriptionContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    text-align: start;
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  .githubPro:hover {
+    color: #4a4d4a;
+    cursor: pointer;
+  }
+
+  .buttonLeft {
+    background-color: gray;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: fixed;
+    margin-right: 70%;
+  }
+
+  .buttonLeft:hover {
+    background-color: darkgray;
+  }
+
+  .buttonRight {
+    background-color: gray;
+    margin-left: 70%;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:right {
+    background-color: darkgray;
+  }
+}
+
+/* ======================================================================= */
+
+@media only screen and (max-width: 800px) {
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .box {
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project1 {
+    width: 300px;
+    height: 200px;
+  }
+
+  .descriptionContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    text-align: start;
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  .githubPro:hover {
+    color: #4a4d4a;
+    cursor: pointer;
+  }
+
+  .buttonLeft {
+    background-color: gray;
+
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:hover {
+    background-color: darkgray;
+  }
+
+  .buttonRight {
+    background-color: gray;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:right {
+    background-color: darkgray;
+  }
+}
+
+/* ======================================================================= */
+
+@media only screen and (max-width: 400px) {
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .box {
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project1 {
+    width: 240px;
+    height: 170px;
+  }
+
+  .descriptionContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    text-align: start;
+    font-size: 8px;
+    padding: 12px;
+  }
+
+  .githubPro:hover {
+    color: #4a4d4a;
+    cursor: pointer;
+  }
+
+  .buttonLeft {
+    background-color: gray;
+
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .buttonLeft:hover {
+    background-color: darkgray;
+  }
+
+  .buttonRight {
+    background-color: gray;
     height: 30px;
     width: 30px;
     border-radius: 50%;

@@ -59,11 +59,11 @@ const uiLead = () => {
             width={1000}
             height={1000}
             alt="project1"
-            className="project1"
+            className="werewolfDraw"
           />
         ) : null}
         {finish ? <Werewolf /> : null}
-        <p className="mt-5">
+        <p className="werewolfDis mt-5">
           I was the UX/UI Lead for this project and wanted to share the design
           process
         </p>

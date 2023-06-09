@@ -44,6 +44,98 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .plan {
+    background-color: gray;
+    margin-bottom: 17px;
+    margin-left: 0px;
+    border-radius: 5px;
+    min-width: 80px;
+    font-size: x-small;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .plan:hover {
+    background-color: darkgray;
+  }
+
+  .ppt {
+    height: 280px;
+    width: 375px;
+  }
+
+  .ghIcon {
+    color: gray;
+  }
+  .ghIcon:hover {
+    color: darkgray;
+  }
+
+  .werewolfGame {
+    height: 325px;
+    width: 375px;
+  }
+  .werewolfDis {
+    color: transparent;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .plan {
+    background-color: gray;
+    margin-bottom: 17px;
+    margin-left: 0px;
+    border-radius: 5px;
+    min-width: 73px;
+    font-size: xx-small;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .plan:hover {
+    background-color: darkgray;
+  }
+
+  .ppt {
+    height: 230px;
+    width: 300px;
+  }
+
+  .ghIcon {
+    color: gray;
+  }
+  .ghIcon:hover {
+    color: darkgray;
+  }
+
+  .werewolfGame {
+    height: 225px;
+    width: 275px;
+  }
+  .werewolfDis {
+    color: transparent;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   .pageContainer {
     display: flex;
