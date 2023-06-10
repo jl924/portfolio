@@ -12,21 +12,31 @@ const uiLead = () => {
   const [pitch, setPitch] = useState(true)
   const [planning, setPlanning] = useState(false)
   const [finish, setFinished] = useState(false)
+  const [video, setVideo] = useState(false)
 
   let pitchClick = () => {
     setPitch(true)
     setPlanning(false)
     setFinished(false)
+    setVideo(false)
   }
   let planClick = () => {
     setPitch(false)
     setPlanning(true)
     setFinished(false)
+    setVideo(false)
   }
   let finishClick = () => {
     setPitch(false)
     setPlanning(false)
     setFinished(true)
+    setVideo(false)
+  }
+  let videoClick = () => {
+    setPitch(false)
+    setPlanning(false)
+    setFinished(false)
+    setVideo(true)
   }
   const handleClickW = () => {
     window.open("https://github.com/Emerald-Team/We-reWolf", "_blank")
@@ -36,13 +46,16 @@ const uiLead = () => {
     <div className="pageContainer">
       <div className="flex flex-col mr-10 items-center">
         <h2 className="plan" onClick={pitchClick}>
-          Pitch Phase
+          Client Pitch
         </h2>
         <h2 className="plan" onClick={planClick}>
-          Planning Phase
+          Planning/Skeleton
         </h2>
         <h2 className="plan" onClick={finishClick}>
-          Finished Phase
+          Implementation
+        </h2>
+        <h2 className="plan" onClick={videoClick}>
+          Presentation
         </h2>
         <VscGithub size={30} className="ghIcon" onClick={handleClickW} />
       </div>
@@ -63,6 +76,14 @@ const uiLead = () => {
           />
         ) : null}
         {finish ? <Werewolf /> : null}
+        {video ? (
+          <iframe
+            src="https://www.youtube.com/embed/Ai7gI9hvPIo"
+            allow="autoplay; encrypted-media"
+            title="video"
+            className="youtubeWerewolf"
+          />
+        ) : null}
         <p className="werewolfDis mt-5">
           I was the UX/UI Lead for this project and wanted to share the design
           process

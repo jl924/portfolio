@@ -715,7 +715,7 @@
 
   .buttonContainer {
     display: flex;
-    color: transparent;
+    color: white;
     margin-right: 2%;
     margin-top: 2%;
   }
