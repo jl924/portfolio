@@ -16,7 +16,6 @@
     display: flex;
     border-radius: 10px;
   }
-
   .gameSelection {
     background-color: white;
     color: black;
@@ -159,6 +158,14 @@
   .betContainer {
     margin-left: 10px;
   }
+
+  .intro {
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+    font-size: 10px;
+    color: transparent;
+  }
 }
 /* =============================================================================== */
 @media only screen and (max-width: 950px) {
@@ -175,7 +182,11 @@
     display: flex;
     border-radius: 10px;
   }
-
+  .intro {
+    position: absolute;
+    bottom: 13%;
+    text-align: center;
+  }
   .gameSelection {
     background-color: white;
     color: black;
@@ -355,6 +366,10 @@
     align-items: center;
     text-align: center;
     z-index: 3;
+  }
+  .intro {
+    position: absolute;
+    top: 13%;
   }
 
   .container {

@@ -14,7 +14,7 @@ const Header = () => {
           <Link href="/uxuilead">UX/UI Lead</Link>
         </button>
         <button className="button">
-          <Link href="/games">Soon...</Link>
+          <Link href="/games">Games</Link>
         </button>
       </div>
     </div>
