@@ -5,7 +5,7 @@ const Games = () => {
   return (
     <div className="game">
       <p className="intro">
-        Hello and thank you, for looking around! Enjoy your time here with some
+        Hello and thank you for looking around! Enjoy your time here with some
         games! More games to be added!
       </p>
       <div className="gameBox">
