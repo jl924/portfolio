@@ -244,11 +244,21 @@ export default function Blackjack() {
           </div>
           <div className="cardContainer">
             {start ? (
-              <button onClick={startGame}>Start</button>
+              <button className="bjButton" onClick={startGame}>
+                Start
+              </button>
             ) : (
               <>
-                {stay ? <button onClick={giveCard}>Hit</button> : null}
-                {stay ? <button onClick={endPhase}>Stay</button> : null}
+                {stay ? (
+                  <button className="bjButton" onClick={giveCard}>
+                    Hit
+                  </button>
+                ) : null}
+                {stay ? (
+                  <button className="bjButton" onClick={endPhase}>
+                    Stay
+                  </button>
+                ) : null}
               </>
             )}
           </div>
@@ -265,6 +275,7 @@ export default function Blackjack() {
         {start ? (
           <>
             <button
+              className="betButton"
               onClick={() => {
                 setBet((current) => current + 10)
                 setMoney((current) => current - 10)
@@ -273,6 +284,7 @@ export default function Blackjack() {
               10
             </button>
             <button
+              className="betButton"
               onClick={() => {
                 setBet((current) => current + 20)
                 setMoney((current) => current - 20)
@@ -281,6 +293,7 @@ export default function Blackjack() {
               20
             </button>
             <button
+              className="betButton"
               onClick={() => {
                 setBet((current) => current + 40)
                 setMoney((current) => current - 40)
@@ -289,6 +302,7 @@ export default function Blackjack() {
               40
             </button>
             <button
+              className="betButton"
               onClick={() => {
                 setBet((current) => current + 100)
                 setMoney((current) => current - 100)
@@ -297,6 +311,7 @@ export default function Blackjack() {
               100
             </button>
             <button
+              className="betButton"
               onClick={() => {
                 setMoney((current) => current + bet)
                 setBet(0)
