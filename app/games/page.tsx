@@ -13,7 +13,9 @@ const Games = () => {
       </div>
       <div className="gameSelection">
         <h4>Games</h4>
-        <button className="gamePick">Black Jack</button>
+        <select className="gameDropdown">
+          <option value="blackjack">Blackjack</option>
+        </select>
       </div>
     </div>
   )

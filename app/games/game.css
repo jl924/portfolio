@@ -489,3 +489,7 @@
 .betButton:hover {
   background-color: lightgray;
 }
+
+.gameDropdown {
+  background-color: skyblue;
+}

@@ -174,7 +174,7 @@ export default function Blackjack() {
           alert("TIE")
         }
         window.location.reload(false)
-      } else if (dealerHard > 17 && dealerHard <= 21) {
+      } else if (dealerHard >= 17 && dealerHard <= 21) {
         if (dealerSoft > 21) {
           var newMoney = bet + bet + money
           localStorage.setItem("money", newMoney)
