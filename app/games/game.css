@@ -361,7 +361,8 @@
   }
   .intro {
     position: absolute;
-    top: 13%;
+    top: 12%;
+    color: white;
   }
 
   .container {
