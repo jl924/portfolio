@@ -1,6 +1,7 @@
 Jae Hoon Lee's portfolio!
 
 Have a look around and see how I code!
+Feel free to reach out anytime!
 
 <p>
  <a href="https://www.linkedin.com/in/jae-hoon-lee/">
