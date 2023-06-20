@@ -61,10 +61,11 @@ export default function Home() {
             such as Japanese and English, and adjusting to different cultural
             settings. These experiences have been helpful in my software
             engineering career, where I effortlessly acquired and efficiently
-            utilized programming languages like JavaScript and React. Therefore,
-            I am highly confident in my ability to swiftly master and
-            effectively use new tech languages when presented with future
-            opportunities, such as learning a new language for a job or project.
+            utilized programming languages like JavaScript, React, Python, and
+            many more. Therefore, I am highly confident in my ability to swiftly
+            master and effectively use new tech languages when presented with
+            future opportunities, such as learning a new language for a job or
+            project.
           </p>
           <p>
             Furthermore, my adaptability has proven instrumental in thriving
