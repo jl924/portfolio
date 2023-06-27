@@ -13,6 +13,7 @@ const front: string[] = [
 ]
 
 const back: string[] = [
+  "Python",
   "Node.js",
   "Express",
   "MongoDB",
