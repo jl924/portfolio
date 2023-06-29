@@ -1,7 +1,6 @@
-weight = input("weight: ")
-metric = input("(K)g or (L)bs: ")
-
-if metric == "k":
-    print(float(weight) + 10)
-if metric == "l":
-    print(float(weight) + 20)
+list = [1,2,3,4,5,6,7,8,9]
+biggest = list[0]
+for num in list:
+    if num>biggest:
+        biggest = num
+print(biggest)
