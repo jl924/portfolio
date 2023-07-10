@@ -47,8 +47,8 @@ export default function Home() {
         <div className="aboutMeSection">
           <h1 className="aboutMe">About Me</h1>
           <p className="firstPara">
-            Hello! My name is Jae, a software engineer with a passion for
-            front-end development. My aim is to apply my proficiency and
+            Hello! My name is Jae Hoon Lee, a software engineer with a passion
+            for front-end development. My aim is to apply my proficiency and
             knowledge to improve the productivity and performance of a company.
             I'm currently on the lookout for an organization that values
             innovation and encourages growth, where I can utilize my skills to
