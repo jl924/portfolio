@@ -188,7 +188,7 @@ export default function Blackjack() {
           alert("YOU LOSE")
         } else {
           localStorage.setItem("money", newMoney)
-          alert("TIE")
+          alert("TIE/PUSH")
         }
         window.location.reload(false)
       } else {
